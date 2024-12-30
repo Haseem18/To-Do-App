@@ -34,6 +34,6 @@ function addTask() {
   liElement.appendChild(btnElement);
   taskListElement.appendChild(liElement);
   btnElement.addEventListener("click", () => {
-    liElement.remove();
+    listItems.pop(liElement.remove());
   });
 }
